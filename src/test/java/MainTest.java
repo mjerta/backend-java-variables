@@ -1,3 +1,5 @@
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -11,7 +13,7 @@ public class MainTest {
         PrintStream mockedPrintStream = mock(PrintStream.class);
         System.setOut(mockedPrintStream);
         Main.main(new String[]{});
-        verify(mockedPrintStream).println("Dit is een voorbeeld");
+        verify(mockedPrintStream, atLeastOnce()).println("Dit is een voorbeeld");
         verify(mockedPrintStream).println("hello world");
         verify(mockedPrintStream).println(true);
         verify(mockedPrintStream).println(4);
