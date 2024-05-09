@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         String string_voorbeeld = "Dit is een voorbeeld";
-        String string_hello_world = "Hello World";
+        String string_hello_world = "hello world";
         boolean boolean_true = true;
         int int_four =  4;
         short short_minus_eight = -8;
@@ -22,7 +22,7 @@ public class Main {
         System.out.println(double_minus_two_point_three); // double -2.3
 
         // Bonus: Wijs een nieuwe waarde toe aan een bestaande variabele
-
+        string_voorbeeld = "Dit is een aangepast voorbeeld";
         System.out.println(string_voorbeeld); // String Dit is een aangepast voorbeeld
     }
 
